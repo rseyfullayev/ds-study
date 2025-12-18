@@ -12,6 +12,7 @@ Multiway trees have some requirements:
 Each node consists of entries that lead to other nodes. Thus, we gonna have two structures. First one, an entry structure that consists of individual entries within the node and each one of them store the key data ( or some pointer to another structure where data is stored ) and of-course the pointer to the right subtree. Why it is right? Because the as we said before if we have k entries we will have k+1 pointers that point to other nodes. In practice, we usually assign first pointer in the node itself and the second ones to the _right_ of the data-itself.
 
 > [!NOTE]
+> This is a note!
 
 ```c
 typedef struct Entry {
